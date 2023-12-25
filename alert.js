@@ -1,0 +1,1 @@
+alert("Welcome Sohan! \n This is an alert box through ajax call.");
