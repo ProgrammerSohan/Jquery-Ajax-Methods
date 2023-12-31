@@ -8,7 +8,11 @@
     <script type="text/javascript"> 
         $(document).ready(function(){
             $("#btn").click(function(){
-                $("#response").load("load-demo.html #p1")
+                $(document).ajaxSend(function(event,xhr,option){
+                    alert("The request is about to be sent.\nRequest URL : " + option.url + " ");
+                });
+               // $("#response").load("load-demo2.html #p1")
+                $("#response").load("load-demo2.html")
             });
         });
 
