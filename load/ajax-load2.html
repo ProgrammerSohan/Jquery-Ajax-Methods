@@ -9,10 +9,10 @@
         $(document).ready(function(){
             $("#btn").click(function(){
                 $("#response").load("load-demo.html",function(responseTxt,statusTxt,xhr){
-                    if(responseTxt =="success"){
+                    if(statusTxt =="success"){
                         alert("Demo File data loaded successfully...");
                     }
-                    if(responseTxt =="error"){
+                    if(statusTxt =="error"){
                         alert("Error : " + xhr.status + ":" + xhr.statusText);
                     }
                 });
