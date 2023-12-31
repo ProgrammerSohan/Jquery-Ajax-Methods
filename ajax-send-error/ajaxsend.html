@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example ajaxSend()</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("#response").load("load-demo.html #p1")
+            });
+        });
+
+        /*ajax part using load()*/
+    </script>
+    <style type="text/css">
+        body{
+            text-align: center;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Example load()</h1>
+    <p id="response">This statement will be replaced</p>
+    <button id="btn">Click</button>
+   <!--  <div id="response"></div> -->
+</body>
+</html>
